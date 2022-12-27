@@ -1,0 +1,307 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="checkout.css">
+        <link rel="stylesheet" href="address.css">
+        <script src="store.js" async></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <!-- <link rel="stylesheet" href="secure.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <title>Swiggy app</title>
+    <link rel="icon" sizes="192x192"
+        href="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_192,h_192/portal/c/logo_2022.png">
+    </head>
+    <body>
+        <!--header-->
+        <header class="navbar">
+            <div class="global-nav">
+                <div class="nav">
+                    <div class="left">
+                        <a href="main.html" class="logo">
+                            <svg class="_8pSp-" viewBox="0 0 559 825" height="49" width="34" fill="#fc8019">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M542.92 388.542C546.805 366.526 542.355 349.598 530.881 340.76C513.621 327.466 487.698 320.236 425.954 320.236C380.271 320.236 331.225 320.286 310.268 320.275C308.322 319.894 301.285 317.604 301.02 309.112L300.734 174.289C300.727 165.779 307.531 158.857 315.943 158.839C324.369 158.825 331.204 165.723 331.211 174.226C331.211 174.226 331.421 247.414 331.441 273.424C331.441 275.936 332.892 281.8 338.549 283.328C375.43 293.267 561.865 285.999 558.967 251.804C543.147 109.96 424.476 0 280.394 0C235.021 0 192.065 10.9162 154.026 30.2754C62.9934 77.5955 -1.65904 173.107 0.0324268 283.43C1.23215 361.622 52.2203 500.605 83.434 521.234C97.8202 530.749 116.765 527.228 201.484 527.228C239.903 527.228 275.679 527.355 293.26 527.436C295.087 527.782 304.671 530.001 304.671 538.907L304.894 641.393C304.915 649.907 298.104 656.826 289.678 656.829C281.266 656.843 274.434 649.953 274.42 641.446C274.42 641.446 275.17 600.322 275.17 584.985C275.17 581.435 275.424 575.339 265.178 570.727C231.432 555.553 121.849 564.712 115.701 581.457C113.347 587.899 125.599 612.801 144.459 644.731C170.102 685.624 211.889 747.245 245.601 792.625C261.047 813.417 268.77 823.813 280.467 824.101C292.165 824.389 300.514 814.236 317.213 793.928C383.012 713.909 516.552 537.663 542.92 388.542Z"
+                                    fill="url(#paint0_linear_19447_66107)"></path>
+                                <defs>
+                                    <linearGradient id="paint0_linear_19447_66107" x1="445.629" y1="63.8626" x2="160.773"
+                                        y2="537.598" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#FF993A"></stop>
+                                        <stop offset="1" stop-color="#F15700"></stop>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </a>
+                        <div class="location-div">
+                            <span class="home">SECURE CHECKOUT</span>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <ul class="items">
+                            <li>
+                                <div class="nav-item">
+                                    <a href="">
+                                        <svg class="_1GTCc" viewBox="6 -1 12 25" height="19" width="19" fill="#686b78">
+                                            <path
+                                                d="M21.966903,13.2244898 C22.0156989,12.8231523 22.0408163,12.4145094 22.0408163,12 C22.0408163,11.8357822 22.036874,11.6724851 22.029079,11.5101984 L17.8574333,11.5102041 C17.8707569,11.6717062 17.877551,11.8350597 17.877551,12 C17.877551,12.4199029 17.8335181,12.8295214 17.749818,13.2244898 L21.966903,13.2244898 Z M21.5255943,15.1836735 L16.9414724,15.1836735 C15.8950289,16.8045422 14.0728218,17.877551 12,17.877551 C9.92717823,17.877551 8.1049711,16.8045422 7.05852762,15.1836735 L2.47440565,15.1836735 C3.80564362,19.168549 7.56739481,22.0408163 12,22.0408163 C16.4326052,22.0408163 20.1943564,19.168549 21.5255943,15.1836735 Z M21.7400381,9.55102041 C20.6468384,5.18931674 16.7006382,1.95918367 12,1.95918367 C7.2993618,1.95918367 3.3531616,5.18931674 2.25996187,9.55102041 L6.6553883,9.55102041 C7.58404845,7.5276442 9.62792376,6.12244898 12,6.12244898 C14.3720762,6.12244898 16.4159515,7.5276442 17.3446117,9.55102041 L21.7400381,9.55102041 Z M2.03309705,13.2244898 L6.25018203,13.2244898 C6.16648186,12.8295214 6.12244898,12.4199029 6.12244898,12 C6.12244898,11.8350597 6.1292431,11.6717062 6.14256675,11.5102041 L1.97092075,11.5102041 C1.96312595,11.6724851 1.95918367,11.8357822 1.95918367,12 C1.95918367,12.4145094 1.98430112,12.8231523 2.03309705,13.2244898 Z M12,24 C5.372583,24 0,18.627417 0,12 C0,5.372583 5.372583,0 12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 Z M12,15.9183673 C14.1640545,15.9183673 15.9183673,14.1640545 15.9183673,12 C15.9183673,9.83594547 14.1640545,8.08163265 12,8.08163265 C9.83594547,8.08163265 8.08163265,9.83594547 8.08163265,12 C8.08163265,14.1640545 9.83594547,15.9183673 12,15.9183673 Z">
+                                            </path>
+                                        </svg>
+                                        <span><a href="help.html">Help</a></span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="nav-item">
+                                    <a href="">
+                                        <svg class="_1GTCc" viewBox="6 0 12 24" height="19" width="18" fill="#686b78">
+                                            <path
+                                                d="M11.9923172,11.2463768 C8.81761115,11.2463768 6.24400341,8.72878961 6.24400341,5.62318841 C6.24400341,2.5175872 8.81761115,0 11.9923172,0 C15.1670232,0 17.740631,2.5175872 17.740631,5.62318841 C17.740631,8.72878961 15.1670232,11.2463768 11.9923172,11.2463768 Z M11.9923172,9.27536232 C14.0542397,9.27536232 15.7257581,7.64022836 15.7257581,5.62318841 C15.7257581,3.60614845 14.0542397,1.97101449 11.9923172,1.97101449 C9.93039471,1.97101449 8.25887628,3.60614845 8.25887628,5.62318841 C8.25887628,7.64022836 9.93039471,9.27536232 11.9923172,9.27536232 Z M24,24 L0,24 L1.21786143,19.7101449 L2.38352552,15.6939891 C2.85911209,14.0398226 4.59284263,12.7536232 6.3530098,12.7536232 L17.6316246,12.7536232 C19.3874139,12.7536232 21.1256928,14.0404157 21.6011089,15.6939891 L22.9903494,20.5259906 C23.0204168,20.63057 23.0450458,20.7352884 23.0641579,20.8398867 L24,24 Z M21.1127477,21.3339312 L21.0851024,21.2122487 C21.0772161,21.1630075 21.0658093,21.1120821 21.0507301,21.0596341 L19.6614896,16.2276325 C19.4305871,15.4245164 18.4851476,14.7246377 17.6316246,14.7246377 L6.3530098,14.7246377 C5.4959645,14.7246377 4.55444948,15.4231177 4.32314478,16.2276325 L2.75521062,21.6811594 L2.65068631,22.0289855 L21.3185825,22.0289855 L21.1127477,21.3339312 Z">
+                                            </path>
+                                        </svg>
+                                        <span>Sign In</span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--Contant section-->
+        <main>
+            <section class="secure-cek">
+                <div class="left-sec-cek">
+                    <div class="add">
+                        Select delivery address
+                    </div>
+                    <div class="add1">
+                        You have a saved address in this Location
+                    </div>
+                    <div class="card">
+                         <div class="card1">
+                            <div>
+                                <img src="location.png" alt=" no-img" width="20px" style="padding-top:25px;">
+                            </div>
+                            
+                            <div class="card2">
+                             <span class="card1-fr">Friends</span><br>
+                             <span class="card1-ad">kphb,K P H B phase 1,kukatpally, <br>
+                                Hyderabad,Telangana,India</span>
+                                <br>
+                                <br>
+                             <span class="time">45 MINS</span><br><br>
+                                <center><input type="button" value="DELIVER HERE" class="delivery-btn"></center><br>
+                            </div>
+                        </div>
+                        <div class="card3">
+                            <div>
+                                <img src="location.png" alt=" no-img" width="20px" style="padding-top:25px;">
+                            </div>
+                             <div class="card2">
+                                <span class="card1-fe"><a href="address1.html">ADD NEW ADDRESS</a> </span><br>
+                                <span class="card1-ad">kphb,K P H B phase 1,kukatpally, <br>
+                                  Hyderabad,Telangana,India</span>
+                                  <br>
+                                  <br>
+                                  <center><input type="button" value="DELIVER HERE" class="delivery-btn1" id="buttonB"></center>
+                                  <!-- <input type="button" name="" > -->
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="payment-scr">
+                        <h4>Payment</h4>
+                    </div>
+                </div>
+                <div class="right-sec-cek">
+                    <header class="Delivery-bill-main">
+                        <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_100,h_100,c_fill/x2zvon5yfx3bly9fefsi">
+                        <div class="bill-containt">
+                            <span >Behrouz Biryani</span>
+                        </div>
+                        <div class="bill-containt1">
+                            <span>venkat Nagar Colony</span>
+                        </div>
+                    </header>
+                    <main>
+                        <section class="item-menu">
+                            <div class="item-list">
+                                <span>Lazeez Bhuna Murgh [ Chicken Biryani Boneless Serves 1-2 ]</span>
+                            </div>
+                            <div class="aid-item">
+                                <div class="aid-item1">
+                                    <div class="adi-item2">
+                                        <div class="aid-item3">+</div>
+                                        <div class="aid-item4">1</div>
+                                        <div class="aid-item5">-</div>
+                                    </div>
+                                    <div class="aid-rate">
+                                        <span>₹200</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sug">
+                                <div class="sug-txt">
+                                    <div class="sug-text">Any suggestions? We will pass it on..</div>
+                                </div>
+                            </div>
+                            <div class="che">
+                                <label for="myCheck">Opt in for Non-Contact Delivery</label> 
+                                    <input type="checkbox" id="myCheck" onclick="myFunction()">
+                                <div class="che1" >
+                                    <span id="text" >Unwell, or avoiding contact? Please 
+                                   select no-contact delivery. Partner will 
+                                   safely place the order outside your door 
+                                   (not for COD)</span>
+
+                                   <script>
+                                    function myFunction() {
+                                      var checkBox = document.getElementById("myCheck");
+                                      var text = document.getElementById("text");
+                                      var text1 = document.getElementById("text1");
+                                      if (checkBox.checked == true){
+                                        text.style.display = "none";
+                                      } else {
+                                         text.style.display = "block";
+                                      }
+                                    //   if (checkBox.checked == true){
+                                    //     text.style.display = "none";
+                                    //   } else {
+                                    //      text.style.display = "block";
+                                    //   }
+                                    }
+                                    </script>
+                                </div>
+                                <div>
+                                    <div class="che2" id="text1">
+                                        Unwell,, or avoiding contact? Please 
+                                       select no-contact delivery. Partner will 
+                                       safely place the order outside your door 
+                                       (not for COD)
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="coupon">
+                                <i class="fa-solid fa-badge-percent"></i>
+                                <p>"Apply Coupon"</p>
+                            </div>
+                            <div class="bill">
+                                <span>Bill Details</span>
+                                <span class="bill-1">Item Total<p>55</p></span>
+                                <span class="bill-2">Delivery Fee |1.3 Kms<p>37</p></span>
+                                <hr>
+                                <span class="bill-3">Taxes and Charges<p>2.75</p></span>
+                            </div>
+                            <!-- <div class="pay">
+                                <div class="pay1">
+                                    <span>To Pay</span>
+                                </div>
+                            </div> -->
+                        </section>
+                        <div class="pay">
+                            <div class="pay1">
+                                <span>To Pay</span>
+                                <p class="pay2">85</p>
+                            </div>
+                        </div>
+                        <div class="gap"></div>
+                        <div class="payc">
+                            <div class="payc1">
+                                <div class="payc2">
+                                    <span class="payc3"><h3>Review your order and address <br>
+                                        details to avoid cancellations</h3>
+                                    </span><br>
+                                    <p><span style="color: orangered;">Note:</span>If you cancle within 60 second of placing
+                                    your order,a 100% refund will be issued.No 
+                                    refund for cancellations made after 60 seconds.</p><br>
+                                    <span>Avoid cancellations as it leads to food wastage</span><br>
+                                    <span class="payc4"><a href=""style="color: orangered;">Read cancellation policy</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+            </section>
+        </main>
+        <section class="map-div">
+            <div class="head">
+              <span class="h1"><i style="size: 10px;" class="fa-solid fa-x" id="buttonBA"></i>&nbsp;&nbsp;&nbsp;&nbsp; save delivery address </span>
+            </div>
+            <div class="mid">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6476.954264173375!2d78.38806451016775!3d17.49586062412355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91a8dcb76371%3A0x779cd37af96408a0!2sMehfil%20Restaurant!5e1!3m2!1sen!2sin!4v1669905197127!5m2!1sen!2sin"
+              width="400" height="220" style="border:0;"    allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade" >
+            </iframe>
+            <div class="addressbar">
+              <input class="add-line" disabled="" type="text" name="" value="Manjeera Majestic commercial Shop no. 117, first floor, K P H B Phase 1, Kukatpally, Hyderabad, Telangana 500072, India">
+            </div>
+            <div class="details">
+              <input type="text" class="text" placeholder="Door/flat no" id="fname" required>
+              <input type="text"  class="text1"  placeholder="Land Mark" id="lname" required>
+            </div>
+            <div class="btns">
+              <div class="bt1"><button><span ><i class="fa-solid fa-house"></i>Home</span></button></div>
+              <div class="bt2"><button><span ><i class="fa-solid fa-briefcase"></i></i>Work</span></button></div>
+              <div class="bt3"><button> <span ><i class="fa-solid fa-location-dot"></i>Other</span></button></div>
+            </div>
+          </div>
+            <div class="footer">
+                <button class="ftbt" id="btn" onclick="showResult()">SAVE ADDRESS & PROCEED</button>
+            </div>
+        </section>
+        <script>
+           $(document).ready(function () {
+                    $(".map-div").hide();
+                    $("#buttonB").click(function () {
+                        $(".map-div").toggle();
+                    });
+                });
+                //close
+                $(document).ready(function () {
+                 $(".fa-x").click(function () {
+                 $(".map-div").hide();
+                     
+                    });
+                });
+                //add addres
+                // showResult();
+function showResult() {
+const form = document.querySelector('form');
+form.addEventListener('submit', (e) => {
+e.preventDefault(); // Prevent HTML refresh
+const formData = new FormData(form); // Converts to array of arrays
+const obj = Object.fromEntries(formData); // Array of arrays to object
+console.log(obj);
+});
+}
+                // var list1 = [];
+                // var list2 = [];
+
+                // var n = 1;
+                // var x = 0;
+
+                // function AddRow(){
+
+                //     var AddRown = document.getElementById('map-div');
+                //     var NewRow = AddRow.insertRow(n);
+
+                //     list1[x] = document.getElementById("fname").value;
+                //     list2[x] = document.getElementById("lname").value;
+
+                //     var cel1 = NewRow.insertCell(0);
+                //     var cel2 = NewRow.insertCell(1);
+
+                //     cel1.innerHTML = list1[x];
+                //     cel2.innerHTML = list2[x];
+                    
+                //     n++;
+                //     x++;
+                // }
+        </script>
+    </body>
+</html>

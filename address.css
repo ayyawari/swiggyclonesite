@@ -1,0 +1,179 @@
+@import url('https://fonts.cdnfonts.com/css/proxima-nova-2');
+
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+.map-div{
+    /* display: sticky; */
+    /* position: fixed;
+    height: 100%;
+    width: 600px;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 4px 12px;
+    font-family: 'Proxima Nova',Arial, Helvetica, sans-serif;
+        margin-top: 5px;                                         */
+        position: fixed;
+        top: 0;
+        bottom: o;
+        right: 0;
+        left: 0;
+        background-color: rgba(0,0,0,0.75);
+        height: 100vh;
+        z-index: 10000;
+}
+.head{
+    height: 70px;
+    width: 100%;
+    background-color: transparent;
+    position: relative;
+    display: fixed;
+    z-index: 1000;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    border-bottom:lightgray;
+    
+    
+}
+
+.h1{
+    font-size: 24px;
+    margin-left: 150px;
+    padding-top: 20px;
+    position: relative;
+    display: flex;
+   
+}
+.mid
+{
+    width: 100%;
+    height: 500px;
+    overflow:scroll;
+    position: relative;
+    padding-left: 100px;
+    background-color: transparent;
+    
+}
+.mid::-webkit-scrollbar{
+    display: none; 
+
+}
+iframe{
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.addressbar{
+    height: 60px;
+    width: 400px;
+    margin-left: 50px;
+    background-color: #fff;
+    border: 1px solid #282c3f44;
+    position: relative;
+    display: flex;
+   
+}
+.add-line{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    height: 70px;
+    width: 100%;
+    font-size: 17px;
+    margin: 0;
+    padding: 0 0px;
+    padding-top:0px; 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 500;
+    font: bold;
+    color: black;
+   font-weight: 400;
+}
+.text{
+    height: 60px;
+    width: 400px;
+    margin-left: 50px;
+    background-color:transparent;
+    border: 1px solid gray;
+    text-indent: 30px;
+    font-size: 17PX;
+    font-weight: 600;
+    position: relative;
+    display: flex;
+    margin-top: 20px;
+    outline: none;
+}
+.text1{
+    height: 60px;
+    width: 400px;
+    margin-left: 50px;
+    background-color: transparent;
+    border: 1px solid gray;
+    position: relative;
+    display: flex;
+    border-top:none;
+    text-indent: 30px;
+    font-size: 17PX;
+    font-weight: 600;
+    outline: none;
+}
+.btns{
+    height: 60px;
+    width:400PX;
+    display: grid;
+    border-top:none;
+    margin-left: 50px;
+    background-color: #fff;
+    border: 1px solid gray;
+    margin-bottom: 40px;
+    display: flex;
+    border-top: transparent;
+}
+.btns .bt1,.bt2,.bt3{
+    width: 33%; 
+   display: flex;
+
+   border: 1px solid transparent;
+   border-right: 1px solid rgba(0, 0, 0, 0.562);
+}
+.btns .bt3{
+    border-right: transparent;
+}
+.btns button{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+}
+.footer{
+    height: 70px;
+    width: 100%;
+   display: flex;
+   position: relative;
+   margin-top: 20px;
+    background-color:transparent;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px -3px 5px;
+
+}
+.footer .ftbt{
+    width: 400px;
+    height: 50px;
+    background-color: orangered;
+    
+    position: relative;
+    margin-left: 150px;
+    
+    color: white;
+    margin-top: 10px;
+    border-right: none;
+    border: none;
+    cursor: pointer;
+}
+
